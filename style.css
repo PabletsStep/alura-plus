@@ -11,7 +11,7 @@ body {
     background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
     font-family: var(--fonte-principal);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
 }
 
@@ -26,11 +26,11 @@ body {
     background-size: contain;
     align-items: center;
     text-align: center;
-
+    height: 100vh;
 }
 
 .container {
-    height: 100vh;
+    
     display: grid;
     grid-template-columns: 50% 50%;
     
@@ -52,12 +52,12 @@ body {
 }
 
 .container__aviso {
-    font-size: 12px;
+    font-size: 0.75rem;
     font-size: var(--cinza-secundario);
 }
 
 .container__titulo {
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 700;
 }
 
@@ -75,12 +75,12 @@ body {
 
 .secundario {
     align-items: center;
-    margin: 0 10em;
+    margin: 10em 10em;
 }
 
 .descricao__titulo {
     font-weight: 700;
-    font-size: 48px;
+    font-size: 3rem;
     color: var(--branco-principal);
     margin-bottom: 0.1em;
 }
@@ -110,7 +110,7 @@ body {
 }
 
 .dispositivos__titulo {
-    font-size: 48px;
+    font-size: 3rem;
     color: var(--branco-principal);
 }
 
@@ -142,13 +142,13 @@ body {
 }
 
 .rodape__texto {
-    font-size: 16px;
+    font-size: 1rem;
     margin: 1em 0;
     color: var(--branco-principal);
 }
 
 .rodape__texto__final {
-    font-size: 14px;
+    font-size: 0.875rem;
     margin: 1em;
     color: var(--cinza-secundario);
 }
@@ -156,4 +156,38 @@ body {
 .container__botao:hover {
     background-color: var(--botao-azul-efeito);
     color: var(--cor-de-fundo);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: block;
+        background-image: none;
+        height: 100%;
+        
+    }
+
+    .container__imagem {
+        width: 50vw;
+    }
+
+    .container__caixa {
+        margin: 2em 2em;
+    }
+
+    .secundario {
+        margin: 2em 0;
+        text-align: center;
+    }
+
+    .secundario__imagem {
+        width: 50vw;
+    }
+
+    .dispositivos__lista {
+        display: block;
+    }
+
+    .rodape__lista {
+        display: block;
+    }
 }
